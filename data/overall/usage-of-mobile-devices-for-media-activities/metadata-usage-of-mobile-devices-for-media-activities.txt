@@ -1,0 +1,79 @@
+# Metadata for Usage of Mobile Devices for Media Activities
+---
+Identifier: 'bd80d04e-2980-40e6-a00d-4f0a5d16414e'
+Name: 'usage-of-mobile-devices-for-media-activities'
+Title: 'Usage of Mobile Devices for Media Activities'
+Description:
+  - 'Dataset shows the percentage of respondents who have ever used a mobile device
+    to engage in media activities.'
+  - ''
+  - 'The data was extracted from the IMDA Media Consumer Experience Study, an annual
+    survey conducted by IMDA , which aims to provide insights into Singapore Citizens
+    and PRs'' media consumption habits.'
+  - ''
+  - 'For more information, please visit:'
+  - 'https://www.imda.gov.sg/industry-development/facts-and-figures/media-consumer-experience-study'
+Topics:
+  - 'Society'
+Keywords:
+  - 'Information Technology'
+  - 'Media Consumption'
+  - 'Mobile Phones'
+  - 'Video Games'
+Publisher:
+  Name: 'Infocomm Media Development Authority'
+  Admin 1:
+    Name: 'Goh Yan Hui'
+    Department: 'Planning'
+    Email: 'Goh_Yan_Hui@imda.gov.sg'
+  Admin 2:
+    Name: 'Mabel Chan'
+    Department: 'Planning'
+    Email: 'Mabel_Chan@imda.gov.sg'
+Sources:
+  - 'Infocomm Media Development Authority'
+Source Url: 'https://www.imda.gov.sg/industry-development/facts-and-figures/media-consumer-experience-study'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2013-01-01 to 2015-12-31'
+Last Updated: '2017-04-04T02:24:43.238935'
+Resources:
+  -
+    Identifier: '8dccb687-9265-415b-909a-86bcf578c22f'
+    Title: 'Usage of Mobile Devices for Media Activities'
+    Url: 'https://storage.data.gov.sg/usage-of-mobile-devices-for-media-activities/resources/usage-of-mobile-devices-for-media-activities-2016-09-29T16-22-20Z.csv'
+    Format: 'CSV'
+    Coverage: '2013-01-01 to 2015-12-31'
+    Description: 'Data shows the percentage of respondents who ever used a mobile
+      device for media activities.'
+    Last Updated: '2016-09-29T16:22:20.794358'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'age'
+        Title: 'Age'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'media_activity'
+        Title: 'Media activity'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'sample_size'
+        Title: 'Sample size'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Number'
+      -
+        Name: 'ever_used'
+        Title: 'Ever used'
+        Type: 'numeric'
+        Sub Type: 'percentage'
+        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
+          100%'
