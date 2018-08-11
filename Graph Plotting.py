@@ -34,15 +34,15 @@ app.layout = html.Div(children=[
     html.H1(children='How are crime rates affected by the size of the population?'),
 
     html.Div(children='''
-        Dash: A web application framework for Python.
+        First, we try to see how the population has been doing from 2005 to 2015
     '''),
 
     dcc.Graph(
-        id='example-graph',
+        id='population-graph',
         figure={
             'data': [
                 {'x': [1, 2, 3], 'y': [4, 1, 2], 'type': 'bar', 'name': 'SF'},
-                {'x': [1, 2, 3], 'y': [2, 4, 5], 'type': 'bar', 'name': u'Montréal'},
+                {'x': [dataPopulation.year], 'y':[dataPopulation.population], 'type':'bar', 'name':'Singapore Population'},
             ],
             'layout': {
                 'title': 'Population Size'
