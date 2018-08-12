@@ -11,7 +11,7 @@
 
 * [Overall Crime Cases & Crime Rate + Sorted by Crime Type](https://data.gov.sg/dataset/overall-crime-cases-crime-rate)
 
-* [World Bank - Singapore Population from 2008](hhttps://data.worldbank.org/indicator/SP.POP.TOTL?end=2017&locations=SG&start=2008)
+* [World Bank - Singapore Population from 2008](https://data.worldbank.org/indicator/SP.POP.TOTL?end=2017&locations=SG&start=2008)
 
 * [Desktop vs Mobile vs Tablet Market Share Singapore from 2008 to 2015](http://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/singapore/2009)
 
