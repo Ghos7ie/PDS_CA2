@@ -1,10 +1,4 @@
-
-# coding: utf-8
-
-# # Data Extraction
-
-# In[124]:
-
+## Data Extraction
 
 import pandas as pd
 import numpy as np
@@ -44,7 +38,31 @@ def readCompare ():
 df6 = readCompare()
 
 # Getting info on each dataset
-# ADD BACK LATER
+
+# df1
+print('<-- Dataset 1 - Population size -->');print()
+print(df1.info())
+print('-----end-----');print()
+
+# df2
+print('<-- Dataset 2 - Mobile Data Usage -->');print()
+print(df2.info())
+print('-----end-----');print()
+
+# df3
+print('<-- Dataset 3 - Mobile Usage (Activities) -->');print()
+print(df3.info())
+print('-----end-----');print()
+
+# df4
+print('<-- Dataset 4 - Overall crime rates -->');print()
+print(df4.info())
+print('-----end-----');print()
+
+# df5
+print('<-- Dataset 5 - Overall crime rates by crime types -->');print()
+print(df5.info())
+print('-----end-----');print()
 
 ############################################################
 ### Extracting data from each dataset within 2008 - 2015 ###
@@ -81,36 +99,10 @@ def insertData (collectName, df):
 client = MongoClient()
 db = client['pds_CA2']
 insertData('populationSize', df1e)
-#insertData('mobileDataUsage', df2e)
-#insertData('mobileActivities', df3)
+insertData('mobileDataUsage', df2e)
+insertData('mobileActivities', df3)
 # converting year to string because IT WON'T SUCCEED OTHERWISE
-#df4['year'] = df4['year'].astype(str)
-#insertData('crimeRates', df4)
-#insertData('crimeRatesTypes', df5)   
-#insertData('deviceCompare', df6)
-
-
-# In[123]:
-
-
-import pandas as pd
-import numpy as np
-import pymongo
-from pymongo import MongoClient
-import os
-import glob
-
-# Population size
-file1 = 'data/API_SP.POP.TOTL_DS2_en_csv_v2_10058048.csv'
-
-df1 = pd.read_csv(file1, encoding='utf-8', skiprows=4)
-# File 1 - Population size
-df1e = df1.loc[df1['Country Name']=='Singapore']
-df1e = df1e.drop(['Country Name', 'Country Code', 'Indicator Name', 'Indicator Code', 'Unnamed: 62'], axis=1)
-df1e = df1e.T
-df1e = df1e.reset_index()
-df1e = df1e.rename(index=str, columns={'index':'year',
-                                      206:'population'})
-df1e = df1e.iloc[45:55,:]
-df1e = df1e.reset_index(drop=True)
-
+df4['year'] = df4['year'].astype(str)
+insertData('crimeRates', df4)
+insertData('crimeRatesTypes', df5)   
+insertData('deviceCompare', df6)
